@@ -1,0 +1,960 @@
+[2019-09-10 22:36:17,133] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 22:36:18,220] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-10 22:36:20,059] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 22:36:20,063] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 22:36:41,320] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 22:36:41,324] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:01:19,062] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-10 23:01:21,731] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 23:01:21,734] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:02:15,621] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:02:17,886] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-10 23:02:19,431] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 23:02:19,435] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:06:51,819] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:06:58,839] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 23:06:58,843] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:07:28,335] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-10 23:07:30,855] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-10 23:07:30,858] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-10 23:07:35,077] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:08:29,193] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:08:29,993] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:08:30,469] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:11:31,022] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-10 23:22:47,058] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-10 23:23:08,292] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 18:23:08,311] [INFO] "POST /2/vote/ HTTP/1.1" 200 436
+[2019-09-11 18:23:08,497] [INFO] "POST /2/vote/ HTTP/1.1" 200 436
+[2019-09-11 18:23:38,024] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 18:23:40,019] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 18:30:14,332] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 18:30:19,898] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-11 19:44:04,004] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 19:44:05,725] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 19:44:07,785] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 19:44:52,910] [ERROR] Internal Server Error: /2/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'choice'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 38, in vote
+    logging.info(request.POST['choice'])
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'choice'
+[2019-09-11 19:46:20,086] [ERROR] Internal Server Error: /2/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'choice'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 38, in vote
+    logging.info(request.POST['choice'])
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'choice'
+[2019-09-11 19:46:20,280] [ERROR] "GET /2/vote/ HTTP/1.1" 500 73542
+[2019-09-11 19:46:34,682] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 19:46:36,765] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 19:50:11,572] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 19:50:13,194] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:26:06,215] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 20:26:07,511] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:26:46,046] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 20:26:47,981] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:27:51,223] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 20:27:52,595] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:29:47,201] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 20:29:49,029] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:36:15,950] [INFO] "GET /1/vote/ HTTP/1.1" 200 701
+[2019-09-11 20:46:11,375] [INFO] "GET / HTTP/1.1" 200 237
+[2019-09-11 20:46:13,040] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:46:38,204] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:47:02,544] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:47:04,626] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:47:14,728] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:47:15,746] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:47:19,055] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:47:20,980] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:47:45,359] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:47:49,319] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:13,410] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:48:14,599] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:15,800] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:16,993] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:18,491] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:48:20,170] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:27,643] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:31,277] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:34,804] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:48:39,079] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:48:40,559] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-11 20:48:54,197] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:48:55,089] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:48:59,557] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:58:19,078] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:58:21,740] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:58:23,917] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 20:58:23,920] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-11 20:59:36,078] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 20:59:38,579] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 20:59:41,823] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 20:59:41,826] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-11 21:04:10,947] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:04:12,208] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:04:13,929] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.extract_stack(selected_choice))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 299, in walk_stack
+    yield f, f.f_lineno
+AttributeError: 'Choice' object has no attribute 'f_lineno'
+[2019-09-11 21:04:14,071] [ERROR] "POST /1/vote/ HTTP/1.1" 500 75953
+[2019-09-11 21:06:56,631] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:06:58,428] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:06:59,749] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 21:06:59,752] [INFO] "GET /1/results/ HTTP/1.1" 200 44
+[2019-09-11 21:08:26,330] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:08:27,660] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:08:28,851] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.extract_stack(selected_choice))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 299, in walk_stack
+    yield f, f.f_lineno
+AttributeError: 'Choice' object has no attribute 'f_lineno'
+[2019-09-11 21:08:29,041] [ERROR] "POST /1/vote/ HTTP/1.1" 500 75950
+[2019-09-11 21:13:27,284] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:13:28,831] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:13:30,484] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback(selected_choice))
+TypeError: 'module' object is not callable
+[2019-09-11 21:13:30,585] [ERROR] "POST /1/vote/ HTTP/1.1" 500 64232
+[2019-09-11 21:14:02,080] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:14:03,764] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:14:05,020] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 40, in vote
+    logging.DEBUG('An error occurred: %s' % stack)
+TypeError: 'int' object is not callable
+[2019-09-11 21:14:05,112] [ERROR] "POST /1/vote/ HTTP/1.1" 500 64410
+[2019-09-11 21:18:32,130] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:18:33,275] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:18:34,529] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 40, in vote
+    logging.DEBUG(stack)
+TypeError: 'int' object is not callable
+[2019-09-11 21:18:34,615] [ERROR] "POST /1/vote/ HTTP/1.1" 500 64343
+[2019-09-11 21:19:39,592] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:19:40,592] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:19:42,087] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.extract_stack(selected_choice,1))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 299, in walk_stack
+    yield f, f.f_lineno
+AttributeError: 'Choice' object has no attribute 'f_lineno'
+[2019-09-11 21:19:42,303] [ERROR] "POST /1/vote/ HTTP/1.1" 500 75911
+[2019-09-11 21:39:52,630] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:39:53,792] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:39:55,024] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.extract_stack(selected_choice,1))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 299, in walk_stack
+    yield f, f.f_lineno
+AttributeError: 'Choice' object has no attribute 'f_lineno'
+[2019-09-11 21:39:55,112] [ERROR] "POST /1/vote/ HTTP/1.1" 500 75910
+[2019-09-11 21:40:27,824] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.extract_stack(selected_choice,None))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 299, in walk_stack
+    yield f, f.f_lineno
+AttributeError: 'Choice' object has no attribute 'f_lineno'
+[2019-09-11 21:40:27,928] [ERROR] "POST /1/vote/ HTTP/1.1" 500 75926
+[2019-09-11 21:52:55,442] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 21:52:56,975] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 21:52:58,570] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.format_tb(selected_choice))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 57, in format_tb
+    return extract_tb(tb, limit=limit).format()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 72, in extract_tb
+    return StackSummary.extract(walk_tb(tb), limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 345, in extract
+    for f, lineno in frame_gen:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/traceback.py", line 310, in walk_tb
+    yield tb.tb_frame, tb.tb_lineno
+AttributeError: 'Choice' object has no attribute 'tb_frame'
+[2019-09-11 21:52:58,700] [ERROR] "POST /1/vote/ HTTP/1.1" 500 79546
+[2019-09-11 21:54:24,875] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 39, in vote
+    stack = pprint.pformat(traceback.format_tb())
+TypeError: format_tb() missing 1 required positional argument: 'tb'
+[2019-09-11 21:54:24,953] [ERROR] "POST /1/vote/ HTTP/1.1" 500 64288
+[2019-09-11 21:55:39,663] [ERROR] Internal Server Error: /1/vote/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 40, in vote
+    logging.DEBUG(stack)
+TypeError: 'int' object is not callable
+[2019-09-11 21:55:39,750] [ERROR] "POST /1/vote/ HTTP/1.1" 500 64320
+[2019-09-11 22:12:06,185] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 22:12:08,206] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:12:09,232] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:12:09,238] [ERROR] Internal Server Error: /1/results/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 31, in results
+    return render(request, 'polls/results.html', {'question': question})
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: polls/results.html
+[2019-09-11 22:12:09,379] [ERROR] "GET /1/results/ HTTP/1.1" 500 78047
+[2019-09-11 22:12:40,184] [ERROR] Internal Server Error: /1/results/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 74, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'polls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 31, in results
+    return render(request, 'learn/results.html', {'question': question})
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 84, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'polls' is not a registered namespace
+[2019-09-11 22:12:40,339] [ERROR] "GET /1/results/ HTTP/1.1" 500 112687
+[2019-09-11 22:13:00,884] [ERROR] Internal Server Error: /1/results/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 74, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'learn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 31, in results
+    return render(request, 'learn/results.html', {'question': question})
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 84, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'learn' is not a registered namespace
+[2019-09-11 22:13:00,994] [ERROR] "GET /1/results/ HTTP/1.1" 500 112687
+[2019-09-11 22:13:02,765] [ERROR] Internal Server Error: /1/results/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 74, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'learn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 31, in results
+    return render(request, 'learn/results.html', {'question': question})
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 84, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'learn' is not a registered namespace
+[2019-09-11 22:13:02,892] [ERROR] "GET /1/results/ HTTP/1.1" 500 112687
+[2019-09-11 22:13:03,748] [ERROR] Internal Server Error: /1/results/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 74, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'learn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/apple/PycharmProjects/mydjango/learn/views.py", line 31, in results
+    return render(request, 'learn/results.html', {'question': question})
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/urls/base.py", line 84, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'learn' is not a registered namespace
+[2019-09-11 22:13:03,843] [ERROR] "GET /1/results/ HTTP/1.1" 500 112688
+[2019-09-11 22:13:10,594] [INFO] "GET /1/results/ HTTP/1.1" 200 259
+[2019-09-11 22:25:49,714] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:25:53,511] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:25:53,519] [INFO] "GET /1/results/ HTTP/1.1" 200 259
+[2019-09-11 22:27:09,615] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:27:09,624] [INFO] "GET /1/results/ HTTP/1.1" 200 263
+[2019-09-11 22:27:19,151] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:27:24,782] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 22:27:26,370] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:27:27,769] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:27:27,782] [INFO] "GET /1/results/ HTTP/1.1" 200 263
+[2019-09-11 22:27:33,354] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:27:34,387] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:27:34,394] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-11 22:27:36,215] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:27:37,559] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:27:37,566] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-11 22:27:39,157] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:27:41,133] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:27:41,140] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-11 22:49:37,930] [INFO] "GET / HTTP/1.1" 200 36
+[2019-09-11 22:50:06,666] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 22:58:43,442] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-11 22:58:44,016] [ERROR] Internal Server Error: /1/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/detail.py", line 105, in get
+    self.object = self.get_object()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/detail.py", line 47, in get_object
+    % self.__class__.__name__)
+AttributeError: Generic detail view DetailView must be called with either an object pk or a slug.
+[2019-09-11 22:58:44,135] [ERROR] "GET /1/ HTTP/1.1" 500 77124
+[2019-09-11 22:59:01,016] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-11 22:59:02,462] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-11 22:59:02,470] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-18 23:00:34,673] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-18 23:00:34,847] [WARNING] Not Found: /favicon.ico
+[2019-09-18 23:00:34,848] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2498
+[2019-09-18 23:00:36,515] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-18 23:00:37,500] [INFO] "POST /2/vote/ HTTP/1.1" 200 436
+[2019-09-18 23:00:38,878] [INFO] "POST /2/vote/ HTTP/1.1" 200 436
+[2019-09-18 23:00:42,383] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-18 23:00:43,863] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-18 23:00:43,881] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-18 23:00:44,854] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-18 23:00:46,486] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-18 23:00:46,492] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-18 23:01:48,602] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-18 23:01:52,427] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-18 23:01:53,764] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-18 23:02:46,492] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-18 23:02:48,097] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/list.py", line 39, in get_queryset
+    'cls': self.__class__.__name__
+django.core.exceptions.ImproperlyConfigured: IndexView is missing a QuerySet. Define IndexView.model, IndexView.queryset, or override IndexView.get_queryset().
+[2019-09-18 23:02:48,222] [ERROR] "GET / HTTP/1.1" 500 76595
+[2019-09-18 23:08:06,691] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-18 23:08:13,908] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/list.py", line 39, in get_queryset
+    'cls': self.__class__.__name__
+django.core.exceptions.ImproperlyConfigured: IndexView is missing a QuerySet. Define IndexView.model, IndexView.queryset, or override IndexView.get_queryset().
+[2019-09-18 23:08:14,006] [ERROR] "GET / HTTP/1.1" 500 76602
+[2019-09-18 23:08:53,703] [INFO] "GET / HTTP/1.1" 200 136
+[2019-09-18 23:08:54,769] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-18 23:36:36,327] [INFO] "GET / HTTP/1.1" 200 217
+[2019-09-18 23:36:36,391] [WARNING] "GET /static/static/learn/style.css HTTP/1.1" 404 1690
+[2019-09-18 23:36:38,016] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-18 23:36:39,970] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-18 23:37:10,676] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:10,693] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:11,387] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:11,402] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:11,698] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:11,715] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:13,238] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:13,253] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:54,424] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:54,440] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:54,924] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:54,941] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:55,112] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:55,128] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:58,927] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:58,942] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:59,341] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:59,356] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:37:59,727] [INFO] "GET / HTTP/1.1" 200 210
+[2019-09-18 23:37:59,745] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:42:27,349] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:42:27,366] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:42:28,007] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:42:28,023] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:42:28,291] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:42:28,306] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:42:28,496] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:42:28,512] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:42:32,538] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:49:07,743] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:49:07,774] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:49:08,356] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-18 23:49:08,371] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:49:31,228] [WARNING] "GET /static/learn/style.css HTTP/1.1" 404 1669
+[2019-09-18 23:50:28,472] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:50:28,491] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:50:33,320] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:56:56,070] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:56:56,100] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:56:56,728] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:56:56,744] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:56:57,129] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:56:57,143] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:56:57,412] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:56:57,427] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:56:58,952] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:56:58,967] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:57:00,526] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:57:00,543] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-18 23:57:02,061] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-18 23:57:14,616] [WARNING] Not Found: /learn
+[2019-09-18 23:57:14,617] [WARNING] "GET /learn HTTP/1.1" 404 2480
+[2019-09-18 23:57:30,959] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-18 23:57:44,287] [WARNING] Not Found: /learn
+[2019-09-18 23:57:44,287] [WARNING] "GET /learn HTTP/1.1" 404 2480
+[2019-09-19 00:04:13,732] [INFO] "GET / HTTP/1.1" 200 190
+[2019-09-19 00:04:13,907] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-19 00:04:18,316] [WARNING] "GET /static/style.css HTTP/1.1" 404 1651
+[2019-09-19 00:04:52,061] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-19 00:04:52,079] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 27
+[2019-09-23 20:31:03,744] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 20:31:06,334] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:31:06,405] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 20:31:07,694] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-23 20:31:09,514] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-23 20:31:09,523] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 20:31:10,376] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-23 20:51:54,200] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 20:51:55,939] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:06,990] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:08,452] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:09,234] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:09,469] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:09,684] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:22,483] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:26,903] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:56:28,512] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:58:07,264] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 99
+[2019-09-23 20:58:18,262] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 200 3108465
+[2019-09-23 20:58:29,835] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:58:32,118] [INFO] "GET / HTTP/1.1" 200 196
+[2019-09-23 20:58:52,393] [WARNING] "GET /static/images/background.gif HTTP/1.1" 404 1687
+[2019-09-23 20:59:05,807] [WARNING] Not Found: /images/background.gif
+[2019-09-23 20:59:05,808] [WARNING] "GET /images/background.gif HTTP/1.1" 404 2528
+[2019-09-23 21:06:34,083] [WARNING] "GET /static/images/background.gif HTTP/1.1" 404 1687
+[2019-09-23 21:06:44,689] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 304 0
+[2019-09-23 21:10:47,717] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:10:48,582] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:10:53,496] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:10:55,497] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:03,706] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 100
+[2019-09-23 21:11:18,232] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 21:11:34,535] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:36,592] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:37,400] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:39,028] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-23 21:11:41,051] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-23 21:11:42,950] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-23 21:11:42,961] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 21:11:46,947] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:46,968] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 21:11:47,586] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:53,202] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:11:53,641] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:12:21,986] [INFO] "GET /2/ HTTP/1.1" 200 381
+[2019-09-23 21:12:23,701] [INFO] "POST /2/vote/ HTTP/1.1" 200 436
+[2019-09-23 21:12:26,857] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-23 21:12:28,448] [INFO] "POST /1/vote/ HTTP/1.1" 302 0
+[2019-09-23 21:12:28,456] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 21:16:20,259] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 21:16:22,859] [INFO] "GET / HTTP/1.1" 200 311
+[2019-09-23 21:16:22,875] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 21:16:22,888] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 200 2732
+[2019-09-23 21:17:12,494] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:12,507] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 90
+[2019-09-23 21:17:12,512] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 304 0
+[2019-09-23 21:17:22,816] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:22,828] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 100
+[2019-09-23 21:17:22,837] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 304 0
+[2019-09-23 21:17:34,170] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:34,185] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 107
+[2019-09-23 21:17:35,490] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:35,503] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 21:17:37,663] [INFO] "GET /1/results/ HTTP/1.1" 200 264
+[2019-09-23 21:17:39,872] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:39,883] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 21:17:45,122] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:45,137] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 100
+[2019-09-23 21:17:45,147] [INFO] "GET /static/learn/images/background.gif HTTP/1.1" 304 0
+[2019-09-23 21:17:55,949] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:17:55,959] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 98
+[2019-09-23 21:19:58,247] [INFO] "GET /root HTTP/1.1" 301 0
+[2019-09-23 21:19:58,265] [INFO] "GET /root/ HTTP/1.1" 302 0
+[2019-09-23 21:19:58,307] [INFO] "GET /root/login/?next=/root/ HTTP/1.1" 200 1855
+[2019-09-23 21:19:58,323] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+[2019-09-23 21:19:58,325] [INFO] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[2019-09-23 21:19:58,325] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+[2019-09-23 21:19:58,330] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2019-09-23 21:19:58,375] [INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[2019-09-23 21:19:58,378] [INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[2019-09-23 21:20:04,793] [INFO] "POST /root/login/?next=/root/ HTTP/1.1" 302 0
+[2019-09-23 21:20:04,815] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 21:20:04,839] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2019-09-23 21:20:04,841] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2019-09-23 21:20:04,848] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2019-09-23 21:20:04,856] [INFO] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[2019-09-23 21:20:07,092] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:20:07,125] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[2019-09-23 21:20:07,133] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:20:07,134] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+[2019-09-23 21:20:07,139] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2019-09-23 21:20:07,144] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+[2019-09-23 21:20:07,149] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+[2019-09-23 21:20:07,152] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+[2019-09-23 21:20:07,152] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[2019-09-23 21:20:07,153] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[2019-09-23 21:20:07,155] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[2019-09-23 21:20:07,186] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2019-09-23 21:20:09,675] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 21:20:11,105] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:20:11,125] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:20:11,976] [INFO] "GET /root/learn/question/2/change/ HTTP/1.1" 200 5173
+[2019-09-23 21:20:12,000] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[2019-09-23 21:20:12,016] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:20:12,016] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[2019-09-23 21:20:12,018] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2019-09-23 21:20:12,019] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2019-09-23 21:20:12,020] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20283
+[2019-09-23 21:20:12,020] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2019-09-23 21:20:12,065] [INFO] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2019-09-23 21:20:12,065] [INFO] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[2019-09-23 21:20:14,055] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:20:14,922] [INFO] "GET /root/learn/question/1/change/ HTTP/1.1" 200 5171
+[2019-09-23 21:20:14,942] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:20:16,155] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:50:02,353] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 21:50:02,379] [INFO] "GET /static/learn/style.css HTTP/1.1" 200 89
+[2019-09-23 21:50:02,389] [INFO] "GET /static/learn/images/1.png HTTP/1.1" 200 29404
+[2019-09-23 21:51:01,335] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 21:51:03,410] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:51:03,428] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:51:05,557] [INFO] "GET /root/learn/question/2/change/ HTTP/1.1" 200 5173
+[2019-09-23 21:51:05,578] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:51:13,937] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:51:15,155] [INFO] "GET /root/learn/question/1/change/ HTTP/1.1" 200 5171
+[2019-09-23 21:51:15,171] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:51:16,694] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:52:43,419] [INFO] "GET /root/learn/question/2/change/ HTTP/1.1" 200 5264
+[2019-09-23 21:52:43,446] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:52:49,004] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:52:49,841] [INFO] "GET /root/learn/question/1/change/ HTTP/1.1" 200 5262
+[2019-09-23 21:52:49,857] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:52:52,913] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:52:54,429] [INFO] "GET /root/learn/ HTTP/1.1" 200 2800
+[2019-09-23 21:52:55,451] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:52:55,466] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:52:57,165] [INFO] "GET /root/learn/ HTTP/1.1" 200 2800
+[2019-09-23 21:52:58,390] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 21:52:58,409] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:52:59,397] [INFO] "GET /root/learn/choice/2/change/ HTTP/1.1" 200 5952
+[2019-09-23 21:52:59,416] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:53:03,537] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 21:53:04,240] [INFO] "GET /root/learn/ HTTP/1.1" 200 2800
+[2019-09-23 21:53:05,651] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:53:05,668] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:53:27,502] [INFO] "GET /root/learn/ HTTP/1.1" 200 2800
+[2019-09-23 21:53:28,149] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 21:53:29,093] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 21:54:01,612] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 21:54:01,640] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:54:04,176] [INFO] "GET /root/learn/choice/2/change/ HTTP/1.1" 200 5952
+[2019-09-23 21:54:04,195] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:54:08,958] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 21:54:10,449] [INFO] "GET /root/learn/choice/1/change/ HTTP/1.1" 200 5954
+[2019-09-23 21:54:10,466] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 21:54:11,913] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 21:55:11,596] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 21:55:11,617] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:01:59,078] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 22:01:59,100] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:00,056] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 22:02:00,073] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:04,838] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 22:02:04,856] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:07,026] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 22:02:07,045] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:11,012] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 22:02:16,685] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 22:02:16,706] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:40,109] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 22:02:41,949] [INFO] "GET /root/learn/choice/ HTTP/1.1" 200 4588
+[2019-09-23 22:02:41,964] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:44,253] [INFO] "GET /root/learn/choice/add/ HTTP/1.1" 200 5717
+[2019-09-23 22:02:44,273] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:02:59,886] [INFO] "GET /root/ HTTP/1.1" 200 4918
+[2019-09-23 22:03:01,303] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:03:01,322] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:03:07,321] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 11743
+[2019-09-23 22:03:07,344] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:03:07,352] [INFO] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1151
+[2019-09-23 22:03:07,354] [INFO] "GET /static/admin/js/inlines.js HTTP/1.1" 200 13673
+[2019-09-23 22:03:20,831] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:03:23,598] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 11743
+[2019-09-23 22:03:23,616] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:12,251] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10324
+[2019-09-23 22:04:12,270] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:28,145] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 5062
+[2019-09-23 22:04:28,169] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:32,829] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:04:32,848] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:34,626] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 5062
+[2019-09-23 22:04:34,646] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:41,288] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:04:42,812] [INFO] "GET /root/learn/question/2/change/ HTTP/1.1" 200 5348
+[2019-09-23 22:04:42,834] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:04:46,377] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:05:25,645] [INFO] "GET /root/learn HTTP/1.1" 301 0
+[2019-09-23 22:05:25,713] [INFO] "GET /root/learn/ HTTP/1.1" 200 2800
+[2019-09-23 22:05:27,444] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:05:27,461] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:05:29,819] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10240
+[2019-09-23 22:05:29,840] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:05:34,422] [INFO] "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+[2019-09-23 22:05:53,526] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10324
+[2019-09-23 22:05:53,544] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:05:55,183] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10324
+[2019-09-23 22:05:55,201] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:05:59,301] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:05:59,318] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:06:01,828] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10324
+[2019-09-23 22:06:01,846] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:06:18,447] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10240
+[2019-09-23 22:06:18,466] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:06:21,912] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:06:21,927] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:06:23,400] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10240
+[2019-09-23 22:06:23,417] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:06:32,306] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10324
+[2019-09-23 22:06:32,328] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:14:45,992] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10585
+[2019-09-23 22:14:46,017] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:14:58,223] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 11743
+[2019-09-23 22:14:58,247] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:15:09,773] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10585
+[2019-09-23 22:15:09,796] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:16:46,938] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5220
+[2019-09-23 22:16:46,959] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:10,888] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:17:10,916] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:12,250] [INFO] "GET /root/learn/question/2/change/ HTTP/1.1" 200 5173
+[2019-09-23 22:17:12,272] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:20,359] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:17:20,375] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:22,478] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 4887
+[2019-09-23 22:17:22,498] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:25,222] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 4624
+[2019-09-23 22:17:34,093] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5220
+[2019-09-23 22:17:34,114] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:38,729] [INFO] "GET /root/learn/question/add/ HTTP/1.1" 200 10585
+[2019-09-23 22:17:38,752] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:17:41,289] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5220
+[2019-09-23 22:17:41,311] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:31:41,476] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 22:31:41,497] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 22:31:41,506] [INFO] "GET /static/learn/images/1.png HTTP/1.1" 304 0
+[2019-09-23 22:33:08,792] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5342
+[2019-09-23 22:33:08,815] [INFO] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[2019-09-23 22:33:08,818] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:33:36,931] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5220
+[2019-09-23 22:33:36,952] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:34:12,867] [INFO] "GET /root/learn/question/ HTTP/1.1" 200 5342
+[2019-09-23 22:34:12,887] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:34:14,322] [INFO] "GET /root/learn/question/?o=2 HTTP/1.1" 200 5658
+[2019-09-23 22:34:14,337] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:34:14,369] [INFO] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2019-09-23 22:34:15,552] [INFO] "GET /root/learn/question/?o=-2 HTTP/1.1" 200 5663
+[2019-09-23 22:34:15,569] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:40:47,522] [INFO] "GET /root/learn/question/?o=-2 HTTP/1.1" 200 6580
+[2019-09-23 22:40:47,544] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:42:20,736] [INFO] "GET /root/learn/question/?o=-2 HTTP/1.1" 200 6954
+[2019-09-23 22:42:20,761] [INFO] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[2019-09-23 22:42:20,764] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:42:22,234] [INFO] "GET /root/learn/question/?q=&o=-2 HTTP/1.1" 200 7051
+[2019-09-23 22:42:22,252] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:42:48,734] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-23 22:42:48,753] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-23 22:42:48,763] [INFO] "GET /static/learn/images/1.png HTTP/1.1" 304 0
+[2019-09-23 22:42:49,967] [INFO] "GET /1/ HTTP/1.1" 200 646
+[2019-09-23 22:45:00,269] [INFO] "GET /root/learn/question/?q=&o=-2 HTTP/1.1" 200 7051
+[2019-09-23 22:45:00,292] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:45:23,323] [INFO] "GET /root/learn/question/?q=&o=-2 HTTP/1.1" 200 6671
+[2019-09-23 22:45:23,342] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:45:24,880] [INFO] "GET /root/learn/question/?q=&o=-2 HTTP/1.1" 200 6671
+[2019-09-23 22:45:24,898] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:46:02,020] [INFO] "GET /root/learn/question/?q=&o=-2 HTTP/1.1" 200 7051
+[2019-09-23 22:46:02,045] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:46:08,579] [INFO] "GET /root/learn/question/?q=What%27s+new%3F&o=-2 HTTP/1.1" 200 6897
+[2019-09-23 22:46:08,594] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:46:12,775] [INFO] "GET /root/learn/question/?q=What&o=-2 HTTP/1.1" 200 7107
+[2019-09-23 22:46:12,790] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:46:17,826] [INFO] "GET /root/learn/question/?q=new&o=-2 HTTP/1.1" 200 6729
+[2019-09-23 22:46:17,841] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-23 22:46:24,734] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-23 22:46:24,758] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:11,544] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:19:11,586] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:12,960] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:19:12,978] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:13,447] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:19:13,461] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:13,750] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:19:13,775] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:24,950] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6219
+[2019-09-25 15:19:24,973] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:27,178] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6219
+[2019-09-25 15:19:27,192] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:19:34,129] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:19:34,150] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:20:47,913] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:20:47,941] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:20:51,087] [INFO] "GET /root/learn/question/?q=What%27s+new%3F HTTP/1.1" 200 5201
+[2019-09-25 15:20:51,107] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:21:00,142] [INFO] "GET /root/learn/question/?q=What%27s+new%3F HTTP/1.1" 200 5201
+[2019-09-25 15:21:00,160] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-25 15:21:01,334] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-25 15:21:01,350] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-27 17:42:42,447] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-27 17:42:42,483] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-27 17:42:45,616] [INFO] "GET /root/learn/question/?q=%E4%B9%A0%E8%BF%91%E5%B9%B3 HTTP/1.1" 200 5279
+[2019-09-27 17:42:45,636] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-27 17:42:47,417] [INFO] "GET /root/learn/question/? HTTP/1.1" 200 6545
+[2019-09-27 17:42:47,432] [INFO] "GET /root/jsi18n/ HTTP/1.1" 200 3185
+[2019-09-30 01:55:11,010] [INFO] "GET / HTTP/1.1" 200 312
+[2019-09-30 01:55:11,058] [INFO] "GET /static/learn/style.css HTTP/1.1" 304 0
+[2019-09-30 01:55:11,075] [INFO] "GET /static/learn/images/1.png HTTP/1.1" 200 29404
+[2019-09-30 01:55:11,801] [INFO] "GET / HTTP/1.1" 200 312
